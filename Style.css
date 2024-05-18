@@ -1,0 +1,260 @@
+@font-face {
+    font-family:YekanBold ;
+    src: url(/Qs_Iranyekan\ bold.ttf);
+
+}
+@font-face {
+font-family:Yekan ;
+src: url(/BYekan+.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally center the body */
+    align-items: center; /* Vertically center the body */
+    background-color: #e4e4e4;
+    box-sizing: border-box;
+}
+title {display:none;}
+script {display:none;}
+style{display: none;}
+
+a{ 
+     text-decoration: none;
+     color: #898989; }
+
+body{
+    max-width: 80vw; /* Adjust the maximum width as needed */
+    margin: 0.5vh auto; /* Center the element horizontally */
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+    width: 100%;
+}
+
+.title{
+    width: 22vw;
+    display: block;
+}
+.tarikh{
+    font-size: clamp(10px,1.1vw,2vw) ;
+    margin-top: -2.3vh;
+    color: #898989;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 64vh;
+    width: 100%;
+    gap: 1vh;
+}
+.mainup{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 35%;
+    width: 100%;
+}
+.maindown{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 65%;
+    width: 100%;
+}
+
+.bilboard {
+    border-radius: 25px;
+    width: 66.3%;
+    height: 100%;
+    position: relative;
+    padding: 10px; /* Adjust the padding as needed */
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+.Art {
+    background-color: #cacdda;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 10px; 
+    width: 100%;
+    overflow: hidden;
+}
+
+p{
+    font-family: Yekan;
+    word-spacing: 0.1rem;
+    max-width: 25vw;
+    padding-right: 3%;
+    padding-top: 3%;
+}
+.paragraph{
+    font-size: clamp(10px,.92vw,1.5vw) ;
+    direction: rtl;
+    text-align:justify ;
+    padding-left: 4%;
+    padding-right: 4%;
+    line-height: 1.6;
+}
+.p1{
+    padding-top: 7%;
+}
+.p2{
+    position: relative;
+    padding-top: 15%;
+}
+.gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 25px;
+    height: 49%; /* Adjust the height of the gradient overlay */
+    background: linear-gradient(to top,#cacdda, #cacddad5);
+    pointer-events: none; /* Allow clicks to pass through */
+}
+.show-more-btn {
+    position: absolute;
+    padding: 10px 20px;
+    color: #477490;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2;
+    bottom: 0;
+    background-color: transparent;
+}
+.quote{
+    font-size: clamp(12px,1.1vw,4vw);
+    text-align:justify ;
+    padding-left: 4%;
+    padding-right: 4%;
+    direction: rtl;
+}
+
+.YekanBold {
+    font-family: YekanBold;
+}
+
+.background {
+    background-color: #cacdda;
+}
+
+/* main partition attributes */
+.partition {
+    height: 75%;
+    width: 32.5%;
+    text-align: right;
+    border-radius: 25px;
+    position: relative; /* Required for absolute positioning */
+    box-sizing: border-box;
+}
+.partitiondown{
+    height: 45%;
+    text-align: right;
+    border-radius: 25px;
+    position: relative; /* Required for absolute positioning */
+}
+
+.partition p {
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+/* main partition titles */
+.headerback {
+    background-color: #477490;
+    border-radius: 12px;
+    padding: 3px;
+    font-size: clamp(12px,1.1vw,4vw);
+    color: white;
+    position: absolute; /* Position the item relative to the container */
+    z-index: 2;
+    right: 15px;
+    top: -27px;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.lastpart{
+    height:100%;
+    width: 32.5%;
+    text-align: right;
+    border-radius: 25px;
+    position: relative;
+    justify-content: space-between;
+}
+.innerpart{
+    width: 100%;
+}
+.Question{
+    border: 1px solid black;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.radio-option {
+    text-align: right;
+    display: flex;
+    align-items: center; /* Align radio button and label vertically */
+}
+
+input[type="radio"] {
+    margin-right: 10px; /* Add spacing between radio button and label */
+}
+/* trasparency and locations of icons in main partitions */
+.transp {
+    background-color: transparent;
+    left: 20px;
+    top: -50px;
+    position: absolute;
+}
+.transp1 {
+    background-color: transparent;
+    left: 20px;
+    top: -20px;
+    position: absolute;
+}
+
+footer{
+    height: 19vh;
+    width: 100%;
+    display: flex;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    color: #898989;
+    font-family:Yekan ;
+    font-size: clamp(10px,1.1vw,2vw) ;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+.icon{
+    width: 3vw;
+}
+.icondis1{
+    width: 5vw;
+}
+.icondis2{
+    width: 8vw;
+    margin-top: 0.5vh;
+}
