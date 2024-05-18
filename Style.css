@@ -19,8 +19,6 @@ src: url(/BYekan+.ttf);
     box-sizing: border-box;
 }
 title {display:none;}
-script {display:none;}
-style{display: none;}
 
 a{ 
      text-decoration: none;
